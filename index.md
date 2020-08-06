@@ -218,9 +218,11 @@ Cabe mencionar que a pesar de que git intentará fusionar automáticamente los c
 
 <br>
 
-## :boom: Cuando todo salga mal :boom:
+## :boom: ¿Y si todo sale mal? :boom:
 
-si quieres deshacer todos los cambios locales y commits, puedes traer la última versión del servidor y apuntar a tu copia local principal ejecutando:
+(Escucha [esta](https://www.youtube.com/watch?v=dQw4w9WgXcQ) canción.)
+
+Si quieres deshacer todos los cambios locales y commits, puedes traer la última versión del servidor y apuntar a tu copia local principal ejecutando:
 ```markdown
 git fetch origin
 git reset --hard origin/master
@@ -246,11 +248,11 @@ Si quieres acceder a los *pull requests* de tu proyecto, deberás acceder a la m
 
 **¡Estás list@!** 
 
-Ahora cuentas con las herramientas básicas de Git. :sunglasses:
+Git es una herramienta compleja y robusta, pero por esa misma razón es tan escalable como lo sea un proyecto. No obstante, saber utilizar un control de versiones resulta una habilidad fundamental entre desarrolladores. Si has terminado de leer esta página, ahora cuentas con las herramientas básicas de git para arrancarte. :sunglasses:
 
 **¡Happy *commiting*! :blush:**
 
-*(Comienza por deshacerte de tus capetas *proyecto_final*, *proyecto_final_2* y *proyecto_final_2_con_cambios* :sweat_smile:)*
+*(Comienza por deshacerte de tus capetas proyecto_final, proyecto_final_2 y proyecto_final_2_con_cambios. :sweat_smile:)*
 
 
 ![Alt Text](https://imgs.xkcd.com/comics/git.png)
