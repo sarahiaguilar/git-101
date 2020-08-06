@@ -1,7 +1,4 @@
 # Git 101 
-### por Sarahí Aguilar :octocat:
-
-<br>
 
 La naturaleza de un proyecto de desarrollo de software es cambiante. Al poco tiempo de arrancar un proyecto, habremos desarrollado ya múltiples versiones del mismo código fuente, y naturalmente, perderemos la pista de los cambios que hemos hecho. Y cuando se trata de un proyecto colaborativo, el escenario anterior puede terminar complicándose aún más. *#TrueStory*
 
