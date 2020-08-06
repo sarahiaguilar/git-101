@@ -62,6 +62,15 @@ git config --global user.email tu@tudominio.com
 ```
 <br>
 
+## Inicializar un nuevo repositorio de git 
+
+Crea un directorio nuevo, úbicate dentro de él y ejecuta:
+
+```markdown
+git init
+```
+<br>
+
 ## :checkered_flag: Inicializar un repositorio desde GitHub :checkered_flag:
 
 Un repositorio de GitHub es un almacenamiento virtual de un proyecto. 
@@ -79,26 +88,61 @@ Hay múltiples formas de inicializar un repositorio; una de ellas es desde GitHu
 
 <br>
 
-## Clonar un repositorio ## 
+## :sheep: Clonar un repositorio :sheep: 
 
 Clonar un repositorio implica hacer una copia de este. 
 
-Podemos clonar repositorios locales utilizando el path del repositorio:
+Para clonar repositorios locales utilizando el path del repositorio:
 ```markdown
 git clone my_projects/project_A
 ```
 
-Podemos clonar repositorios remotos utlizando el URL del repositorio:
+Para clonar repositorios remotos utlizando el URL del repositorio:
 ```markdown
-git clone https://github.com/sarahiaguilar/hello-world
+git clone https://github.com/username/repo-name
+```
+Para clonar un repositorio de GitHub:
+1. Entra al repositorio que deseas clonar.
+2. Da clic en el botón de *Code*.  
+3. Copia la URL desplegada en el recuadro y corre la línea de comando para clonar un repositorio remoto con la URL copiada. ¡Asegúrate de estar ubicado en el directorio en el que desees copiar el nuevo repositorio! 
+
+También es posible descargar el repositorio como .zip y descomprimirlo en el directorio deseado para empezar a trabajar sobre él. 
+
+<br>
+
+## Conectar una carpeta ya existente 
+
+En caso de que tengas una carpeta de proyecto ya trabajada y quieras conectarla a un repositorio nuevo que acabas de crear en GitHub, úbicate dentro de tu carpeta y ejecuta: 
+
+```markdown
+git remote add origin https://github.com/username/repo-name
 ```
 
-¡Asegúrate de estar ubicado en el directorio en el que desees copiar el nuevo repositorio! 
+Después, deberás crear un repositorio nuevo 
+<br>
+
+## :wavy_dash: El worlkflow de Git :wavy_dash: ## 
+
+Git trabaja en 3 etapas:
+1. **Working directory**: El directorio local que contiene y se modifican todos los archivos de un proyecto. 
+2. **Index (Stage)**: El *área* en donde los cambios del *working directory* se deben registrar.  
+3. **Server**: El repositorio remoto en el que tus cambios se veran reflejados para todos aquellos que tengan acceso. 
+
+Para subir los cambios de tu directorio local al repositorio remoto, primero debes registrarlos en el Index (Stage) mediante una instrucción de *add*, y después, mediante una instrucción de *commit* seguida de una instrucción de *push* serán enviados al Server y se verán reflejados en el repositorio remoto. 
+
+## :wavy_dash: Add :wavy_dash: ## 
 
 
 
+## :wavy_dash: Commit :wavy_dash: ## 
 
 
+
+## :wavy_dash: Push :wavy_dash: ## 
+
+
+
+<br>
 
 
 
@@ -122,11 +166,6 @@ git init
 
 
 <br> 
-
-Git trabaja en 3 etapas:
-1. **Working directory**: La carpeta local que contiene y se modifican todos los archivos de un proyecto. 
-2. **Index (Stage)**: El *área* en donde los cambios del *working directory* se deben declarar *listos*.  
-3. **Server**: El repositorio remoto en el que tus cambios se veran reflejados para todos aquellos que tengan acceso. 
 
 
 
