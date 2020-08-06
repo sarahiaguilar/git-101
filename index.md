@@ -62,7 +62,7 @@ git config --global user.email tu@tudominio.com
 ```
 <br>
 
-## Inicializar un nuevo repositorio de git 
+## :octocat: Inicializar un nuevo repositorio de git :octocat:
 
 Crea un directorio nuevo, úbicate dentro de él y ejecuta:
 
@@ -166,81 +166,72 @@ git commit -m "Changed file_name_1.py "
 
 ## :rocket: Push :rocket:
 
-Depsués de hacer un commit, tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios al repositorio remoto, ejecuta: 
+Después de hacer un commit, tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios al repositorio remoto, ejecuta: 
 
 ```markdown
 git push 
 ```
 <br>
 
+## :inbox_tray: Pull :inbox_tray:
 
-
-
-
-
-
-
-
-<br>
-Ubicado dentro del directorio de tu proyecto, la siguiente línea de comando inicializará el repositorio de git. 
+Para actualizar tu repositorio loca al commit más nuevo, ejecuta:
 
 ```markdown
-git init
+git pull
 ```
-
-
-
-
 <br>
 
+## :deciduous_tree: Merge :deciduous_tree:
 
-<br> 
+Las ramas son líneas de tiempo del proyecto. Sirven para trabajar de forma independiente sobre el mismo respositorio, es decir, los commits son propios de una rama. 
+Por ejemplo, un equipo de desarrolladores emplea ramas para desarrollar funcionalidades aisladas unas de otras dentro de su aplicación. 
+Una vez que los cambios de una rama están listos, estos se deberán fusionar con el resto en la rama *master*. La rama *master* es la rama "por defecto" cuando creas un repositorio.
 
-
-
-
-<br>
-<br>
-
-
-
-
-
-
-You can use the [editor on GitHub](https://github.com/sarahiaguilar/git-101/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+Para crear una nueva rama llamada "feature_x", ejecuta:
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+git checkout -b feature_x
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Para regresar a trabajar a la rama master, ejecuta:
+```markdown
+git checkout master
+```
 
-### Jekyll Themes
+Para borrar la rama "feature_x", ejecuta :
+```markdown
+git branch -d feature_x
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sarahiaguilar/git-101/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Una rama nueva no estará disponible para los demás a menos que ejecute sun push a la rama hacia tu repositorio remoto. Para ello, ejecuta:
+```markdown
+git push origin feature_x
+```
 
-### Support or Contact
+Cuando finalmente quieras fusionar otra rama a tu rama activa, ejecuta:
+```markdown
+git merge <branch>
+```
+Cabe mencionar que a pesar de que git intentará fusionar automáticamente los cambios en el proyecto contenidos en ambas ramas, esto no siempre será posible y se podrán producir conflictos. Tú serás responsable de fusionar esos conflictos manualmente.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![Alt Text](https://media0.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
+
+<br>
+
+## :exclamation: Cuando todo salga mal :exclamation:
+
+si quieres deshacer todos los cambios locales y commits, puedes traer la última versión del servidor y apuntar a tu copia local principal ejecutando:
+```markdown
+git fetch origin
+git reset --hard origin/master
+```
+
+**:star: ¡Listo! :star:**
+**:sunglasses: Ahora cuentas con las herramientas básicas de Git. :sunglasses:**
+
+**:blush: ¡Happy *commiting*! :blush:**
+
+*(Comienza por deshacerte de tus capetas *proyecto_final*, *proyecto_final_2* y *proyecto_final_2_con_cambios* :sweat_smile:)*
+
 
 ![Alt Text](https://imgs.xkcd.com/comics/git.png)
