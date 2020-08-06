@@ -1,5 +1,3 @@
-# Git 101 
-
 La naturaleza de un proyecto de desarrollo de software es cambiante. Al poco tiempo de arrancar un proyecto, habremos desarrollado ya múltiples versiones del mismo código fuente, y naturalmente, perderemos la pista de los cambios que hemos hecho. Y cuando se trata de un proyecto colaborativo, el escenario anterior puede terminar complicándose aún más. *#TrueStory*
 
 <br>
@@ -19,8 +17,6 @@ Ahora bien, existen varias plataformas de desarrollo colaborativo para alojar pr
 1. Instalar git en tu computadora. Para ello, no hace falta más que seguir las sencillas instrucciones de la [documentación oficial](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 - Si tu sistema operativo es una distribución de Linux o macOS, únicamente será necesario ejecutar una línea comando en la terminal. 
 - Si tu sistema operativo es Windows, deberás descargar el [instalador](https://git-scm.com/download/win) y seguir las instrucciones. No es necesario modificar las opciones que vienen seleccionadas por *default*. Una vez la instalación se haya completado, verifica que en tus programas instalados se encuentre Git Bash. 
-
-<br>
 
 2. Una cuenta en GitHub. Regístrate [aquí](https://github.com/join). No olvides verificar tu cuenta.  
 
