@@ -8,13 +8,13 @@ Ahora bien, existen varias plataformas de desarrollo colaborativo para alojar pr
 
 <br>
 
-:arrow_right: **En esta guía se aborda una sencilla introducción al uso de Git utilizando respositorios de código alojados en GitHub**. :arrow_left:
+:arrow_right: **En esta página se aborda una sencilla introducción al uso de Git utilizando respositorios de código alojados en GitHub**. :arrow_left:
 
 <br> 
 
 ## :warning: Requerimientos previos :warning:
 
-1. Instalar git en tu computadora. Para ello, no hace falta más que seguir las sencillas instrucciones de la [documentación oficial](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+1. Instalar git en tu computadora. Para ello, no hace falta más que seguir las sencillas instrucciones de la [documentación oficial de Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 - Si tu sistema operativo es una distribución de Linux o macOS, únicamente será necesario ejecutar una línea comando en la terminal. 
 - Si tu sistema operativo es Windows, deberás descargar el [instalador](https://git-scm.com/download/win) y seguir las instrucciones. No es necesario modificar las opciones que vienen seleccionadas por *default*. Una vez la instalación se haya completado, verifica que en tus programas instalados se encuentre Git Bash. 
 
@@ -22,7 +22,7 @@ Ahora bien, existen varias plataformas de desarrollo colaborativo para alojar pr
 
 <br>
 
-## :white_square_button: La terminal :white_square_button:
+## :white_square_button: La terminal: tu aliada :white_square_button:
 
 Para manejar Git, utilizarás líneas de comando desde la terminal. En caso de que tu sistema operativo sea Windows, entonces ejecutarás las líneas de comando desde Git Bash. 
 
@@ -35,7 +35,7 @@ A continuación se enlistan algunos comandos básicos que te serán de gran ayud
 pwd
 ```
 
-- Enistar archivos y carpetas contenidas en el directorio en el que te encuentras
+- Enlistar archivos y carpetas contenidas en el directorio en el que te encuentras
 ```markdown
 ls
 ```
@@ -50,11 +50,47 @@ cd folder_name_1/folder_name_1_1
 mkdir new_folder
 ```
 
+<br>
+
+## :wave: ¡Hola, Git! :wave:
+
+Lo primero que deberás hacer es configurar tus credenciales. Git tiene que saber tu identididad para poder registrar los cambios a tu nombre. 
 
 ```markdown
+git config --global user.name “Tu nombre”
+git config --global user.email tu@tudominio.com
+```
+<br>
 
+## :checkered_flag: Inicializar un repositorio desde GitHub :checkered_flag:
+
+Un repositorio de GitHub es el almacenamiento virtual de tu proyecto. 
+
+1. Inicia sesión en el sitio web de GitHub.
+2. Diríjete desde tu perfil al tab de *Respositories*.
+3. Da clic en el botón de *New*. 
+4. Asíganle un nombre a tu nuevo repositorio. La recomendación es que el nombre de un repositorio sea corto pero explicativo, y que no contenga caracteres especiales. 
+5. Opcionalmente, escribe una breve descripción.
+6. ¿Quieres que tú repositorio de código sea público para todo el Internet o que se mantenga privado? Selecciona una opción: *Public* o *Private*. 
+7. Selecciona si quieres incluir un [archivo de texto *README.md*](https://www.makeareadme.com/) en tu repositorio al inicializarlo. Un archivo de texto *README.md* es un archivo que introduce el proyecto y contiene información relevante de este. 
+8. Selecciona si quieres incluir un archivo [*.gitignore*](https://git-scm.com/docs/gitignore) en tu repositorio al inicializarlo, así como la [licencia](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository). Para los fines prácticos esta página, no abordaremos los detalles de estas últimas dos opciones.
+
+
+
+
+
+
+<br>
+Ubicado dentro del directorio de tu proyecto, la siguiente línea de comando inicializará el repositorio de git. 
+
+```markdown
+git init
 ```
 
+
+
+
+<br>
 
 
 <br> 
