@@ -218,18 +218,37 @@ Cabe mencionar que a pesar de que git intentará fusionar automáticamente los c
 
 <br>
 
-## :exclamation: Cuando todo salga mal :exclamation:
+## :boom: Cuando todo salga mal :boom:
 
 si quieres deshacer todos los cambios locales y commits, puedes traer la última versión del servidor y apuntar a tu copia local principal ejecutando:
 ```markdown
 git fetch origin
 git reset --hard origin/master
 ```
+<br>
 
-**:star: ¡Listo! :star:**
-**:sunglasses: Ahora cuentas con las herramientas básicas de Git. :sunglasses:**
+## :shipit: Pull requests :shipit:
 
-**:blush: ¡Happy *commiting*! :blush:**
+Un *pull request* es la acción de validar un código que se va a fusionar de una rama a otra. Es la forma de colaborar con proyectos de terceros más común en GitHub. Cuando querramos *proponer* la fusión de una rama que hemos creado nosotros al dueño del repositorio, debemos seguir los siguientes sencillos pasos desde GitHub:
+1. Ir al repositorio del proyecto a la pestaña de *Pull requests*.
+2. Da clic en el botón de *New pull request*.
+3. Selecciona en los dos menús drop-down las ramas que quisiéramos que se fusionaran. 
+4. Da clic en el botón de *Create pull request*.
+5. Agrega un comentario informativo. 
+6. Da clic en el nuevo botón de *Create pull request*. 
+7. Ahora, el dueño del proyecto se hará cargo de aceptar el *pull request*. 
+
+Si quieres acceder a los *pull requests* de tu proyecto, deberás acceder a la misma pestaña de *Pull requests*. En ella podrás dar clic en el botón de *Merge pull request* a todos aquellos cambios que decidas aceptar. Recuerda que habrá algunos en los que el *merge* no sea *compatible*.
+
+<br>
+
+## :star: Notas finales :star:
+
+**¡Estás list@!** 
+
+Ahora cuentas con las herramientas básicas de Git. :sunglasses:
+
+**¡Happy *commiting*! :blush:**
 
 *(Comienza por deshacerte de tus capetas *proyecto_final*, *proyecto_final_2* y *proyecto_final_2_con_cambios* :sweat_smile:)*
 
