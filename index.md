@@ -92,12 +92,12 @@ Hay múltiples formas de inicializar un repositorio; una de ellas es desde GitHu
 
 Clonar un repositorio implica hacer una copia de este. 
 
-Para clonar repositorios locales utilizando el path del repositorio:
+Para clonar repositorios locales utilizando el path del repositorio, ejecuta:
 ```markdown
 git clone my_projects/project_A
 ```
 
-Para clonar repositorios remotos utlizando el URL del repositorio:
+Para clonar repositorios remotos utlizando el URL del repositorio, ejecuta:
 ```markdown
 git clone https://github.com/username/repo-name
 ```
@@ -110,7 +110,7 @@ También es posible descargar el repositorio como .zip y descomprimirlo en el di
 
 <br>
 
-## Conectar una carpeta ya existente 
+## :file_folder: Conectar una carpeta ya existente a un repositorio :file_folder:
 
 En caso de que tengas una carpeta de proyecto ya trabajada y quieras conectarla a un repositorio nuevo que acabas de crear en GitHub, úbicate dentro de tu carpeta y ejecuta: 
 
@@ -118,30 +118,59 @@ En caso de que tengas una carpeta de proyecto ya trabajada y quieras conectarla 
 git remote add origin https://github.com/username/repo-name
 ```
 
-Después, deberás crear un repositorio nuevo 
 <br>
 
-## :wavy_dash: El worlkflow de Git :wavy_dash: ## 
+## :wavy_dash: El workflow de Git :wavy_dash: ## 
 
 Git trabaja en 3 etapas:
 1. **Working directory**: El directorio local que contiene y se modifican todos los archivos de un proyecto. 
 2. **Index (Stage)**: El *área* en donde los cambios del *working directory* se deben registrar.  
+3. **HEAD**: Apunta al último registro de cambios realizado. 
 3. **Server**: El repositorio remoto en el que tus cambios se veran reflejados para todos aquellos que tengan acceso. 
 
-Para subir los cambios de tu directorio local al repositorio remoto, primero debes registrarlos en el Index (Stage) mediante una instrucción de *add*, y después, mediante una instrucción de *commit* seguida de una instrucción de *push* serán enviados al Server y se verán reflejados en el repositorio remoto. 
+Para subir los cambios de tu directorio local al repositorio remoto, primero debes registrarlos en el Index (Stage) mediante una instrucción de *add*. Después, mediante una instrucción de *commit*, quedaran registrados en el HEAD. Finalmente, con una instrucción *push*, los cambios serán enviados al Server y se verán reflejados en el repositorio remoto. 
 
-## :wavy_dash: Add :wavy_dash: ## 
+<br>
 
+## :envelope: Add :envelope:
 
+Para registrar los cambios que has hecho en un archivo, ejecutamos:
 
-## :wavy_dash: Commit :wavy_dash: ## 
+```markdown
+git add file_name_1.py
+```
 
+Para registrar los cambios que has hecho en varios archivos, ejecutamos:
 
+```markdown
+git add file_name_1.py file_name_2.py
+```
 
-## :wavy_dash: Push :wavy_dash: ## 
+Para registrar cualquier cambio que hayas hecho en el directorio, ejecutamos:
 
+```markdown
+git add .
+```
+<br>
 
+## :outbox_tray: Commit :outbox_tray: 
 
+Un commit representa la acción de guardar los cambios. 
+
+Ejecuta añadiendo un mensaje informativo de tus cambios:
+
+```markdown
+git commit -m "Changed file_name_1.py "
+```
+<br>
+
+## :rocket: Push :rocket:
+
+Depsués de hacer un commit, tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios al repositorio remoto, ejecuta: 
+
+```markdown
+git push 
+```
 <br>
 
 
