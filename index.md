@@ -64,7 +64,9 @@ git config --global user.email tu@tudominio.com
 
 ## :checkered_flag: Inicializar un repositorio desde GitHub :checkered_flag:
 
-Un repositorio de GitHub es el almacenamiento virtual de tu proyecto. 
+Un repositorio de GitHub es un almacenamiento virtual de un proyecto. 
+
+Hay múltiples formas de inicializar un repositorio; una de ellas es desde GitHub. 
 
 1. Inicia sesión en el sitio web de GitHub.
 2. Diríjete desde tu perfil al tab de *Respositories*.
@@ -74,6 +76,32 @@ Un repositorio de GitHub es el almacenamiento virtual de tu proyecto.
 6. ¿Quieres que tú repositorio de código sea público para todo el Internet o que se mantenga privado? Selecciona una opción: *Public* o *Private*. 
 7. Selecciona si quieres incluir un [archivo de texto *README.md*](https://www.makeareadme.com/) en tu repositorio al inicializarlo. Un archivo de texto *README.md* es un archivo que introduce el proyecto y contiene información relevante de este. 
 8. Selecciona si quieres incluir un archivo [*.gitignore*](https://git-scm.com/docs/gitignore) en tu repositorio al inicializarlo, así como la [licencia](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository). Para los fines prácticos esta página, no abordaremos los detalles de estas últimas dos opciones.
+
+<br>
+
+## Clonar un repositorio ## 
+
+Clonar un repositorio implica hacer una copia de este. 
+
+Podemos clonar repositorios locales utilizando el path del repositorio:
+```markdown
+git clone my_projects/project_A
+```
+
+Podemos clonar repositorios remotos utlizando el URL del repositorio:
+```markdown
+git clone https://github.com/sarahiaguilar/hello-world
+```
+
+¡Asegúrate de estar ubicado en el directorio en el que desees copiar el nuevo repositorio! 
+
+
+
+
+
+
+
+
 
 
 
