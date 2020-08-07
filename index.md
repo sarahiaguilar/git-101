@@ -128,7 +128,7 @@ Git trabaja en 3 etapas:
 3. **HEAD**: Apunta al último registro de cambios realizado. 
 3. **Server**: El repositorio remoto en el que tus cambios se veran reflejados para todos aquellos que tengan acceso. 
 
-Para subir los cambios de tu directorio local al repositorio remoto, primero debes registrarlos en el Index (Stage) mediante una instrucción de *add*. Después, mediante una instrucción de *commit*, quedaran registrados en el HEAD. Finalmente, con una instrucción *push*, los cambios serán enviados al Server y se verán reflejados en el repositorio remoto. 
+Para subir los cambios de tu directorio local al repositorio remoto disponible para todos, primero debes registrarlos en el Index (Stage) mediante una instrucción de *add*. Después, mediante una instrucción de *commit*, quedaran registrados en el HEAD. Finalmente, con una instrucción *push*, los cambios serán enviados al Server y se verán reflejados en el repositorio remoto. 
 
 <br>
 
@@ -210,7 +210,7 @@ git push origin feature_x
 
 Cuando finalmente quieras fusionar otra rama a tu rama activa, ejecuta:
 ```markdown
-git merge <branch>
+git merge feature_x
 ```
 Cabe mencionar que a pesar de que git intentará fusionar automáticamente los cambios en el proyecto contenidos en ambas ramas, esto no siempre será posible y se podrán producir conflictos. Tú serás responsable de fusionar esos conflictos manualmente.
 
@@ -231,7 +231,9 @@ git reset --hard origin/master
 
 ## :shipit: Pull requests :shipit:
 
-Un *pull request* es la acción de validar un código que se va a fusionar de una rama a otra. Es la forma de colaborar con proyectos de terceros más común en GitHub. Cuando querramos *proponer* la fusión de una rama que hemos creado nosotros al dueño del repositorio, debemos seguir los siguientes sencillos pasos desde GitHub:
+Un *pull request* es la acción de validar un código que se va a fusionar de una rama a otra. Es la forma de colaborar con proyectos de terceros más común en GitHub. 
+
+Cuando querramos *proponer* la fusión de una rama que hemos creado nosotros al dueño del repositorio, una opción es seguir los siguientes sencillos pasos desde GitHub:
 1. Ir al repositorio del proyecto a la pestaña de *Pull requests*.
 2. Da clic en el botón de *New pull request*.
 3. Selecciona en los dos menús drop-down las ramas que quisiéramos que se fusionaran. 
@@ -240,7 +242,7 @@ Un *pull request* es la acción de validar un código que se va a fusionar de un
 6. Da clic en el nuevo botón de *Create pull request*. 
 7. Ahora, el dueño del proyecto se hará cargo de aceptar el *pull request*. 
 
-Si quieres acceder a los *pull requests* de tu proyecto, deberás acceder a la misma pestaña de *Pull requests*. En ella podrás dar clic en el botón de *Merge pull request* a todos aquellos cambios que decidas aceptar. Recuerda que habrá algunos en los que el *merge* no sea *compatible*.
+Si quieres acceder a los *pull requests* de un proyecto tuyo, deberás acceder a la pestaña de *Pull requests* desde tu proyecto. En ella podrás dar clic en el botón de *Merge pull request* a todos aquellos cambios que decidas aceptar. Recuerda que habrá algunos en los que el *merge* no sea *compatible*.
 
 <br>
 
