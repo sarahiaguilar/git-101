@@ -12,6 +12,12 @@ Ahora bien, existen varias plataformas de desarrollo colaborativo para alojar pr
 
 <br> 
 
+## :point_right: Consideraciones previas :point_left:
+
+Esta página no busca bajo ningún motivo reemplazar la [documentación oficial de Git](https://git-scm.com/docs). (Nunca ningún tutorial fue mejor que la documenación oficial. :wink:) 
+
+<br> 
+
 ## :warning: Requerimientos previos :warning:
 
 1. Instalar git en tu computadora. Para ello, no hace falta más que seguir las sencillas instrucciones de la [documentación oficial de Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
@@ -252,9 +258,15 @@ Si quieres acceder a los *pull requests* de un proyecto tuyo, deberás acceder a
 
 Git es una herramienta compleja y robusta, pero por esa misma razón es tan escalable como lo sea un proyecto. No obstante, saber utilizar un control de versiones resulta una habilidad fundamental entre desarrolladores. Si has terminado de leer esta página, ahora cuentas con las herramientas básicas de git para arrancarte. :sunglasses:
 
+¿Aún no te es lo suficiente claro? Te recomiendo tomar la [clase 6 del curso *Missing semester of Computer Science* del MIT](https://missing.csail.mit.edu/2020/version-control/) en donde se aborda el control de versiones desde otra sencilla perspectiva distinta a la cubierta en esta página. 
+
 **¡Happy *commiting*! :blush:**
 
 *(Comienza por deshacerte de tus capetas proyecto_final, proyecto_final_2 y proyecto_final_2_con_cambios. :sweat_smile:)*
 
+<br>
 
-![Alt Text](https://imgs.xkcd.com/comics/git.png)
+Un [XKCD cómic](https://xkcd.com/1597/) que lo resume todo muy bien. 
+![XKCD cómic](https://imgs.xkcd.com/comics/git.png)
+
+
