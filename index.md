@@ -124,6 +124,8 @@ En caso de que tengas una carpeta de proyecto ya trabajada y quieras conectarla 
 git remote add origin https://github.com/username/repo-name
 ```
 
+¡No olvides inicializar tu repositorio primero!
+
 <br>
 
 ## :wavy_dash: El workflow de Git :wavy_dash: ## 
@@ -262,11 +264,12 @@ Git es una herramienta compleja y robusta, pero por esa misma razón es tan esca
 
 **¡Happy *commiting*! :blush:**
 
-*(Comienza por deshacerte de tus capetas proyecto_final, proyecto_final_2 y proyecto_final_2_con_cambios. :sweat_smile:)*
-
 <br>
 
 Un [XKCD cómic](https://xkcd.com/1597/) que lo resume todo muy bien. 
+
+<br>
+
 ![XKCD cómic](https://imgs.xkcd.com/comics/git.png)
 
 
