@@ -84,11 +84,11 @@ Un repositorio de GitHub es un almacenamiento virtual de un proyecto.
 Hay múltiples formas de inicializar un repositorio; una de ellas es desde GitHub. 
 
 1. Inicia sesión en el sitio web de GitHub.
-2. Diríjete desde tu perfil al tab de *Respositories*.
+2. Dirígete desde tu perfil al tab de *Respositories*.
 3. Da clic en el botón de *New*. 
 4. Asíganle un nombre a tu nuevo repositorio. La recomendación es que el nombre de un repositorio sea corto pero explicativo, y que no contenga caracteres especiales. 
 5. Opcionalmente, escribe una breve descripción.
-6. ¿Quieres que tú repositorio de código sea público para todo el Internet o que se mantenga privado? Selecciona una opción: *Public* o *Private*. 
+6. ¿Quieres que tu repositorio de código sea público para todo el Internet o que se mantenga privado? Selecciona una opción: *Public* o *Private*. 
 7. Selecciona si quieres incluir un [archivo de texto *README.md*](https://www.makeareadme.com/) en tu repositorio al inicializarlo. Un archivo de texto *README.md* es un archivo que introduce el proyecto y contiene información relevante de este. 
 8. Selecciona si quieres incluir un archivo [*.gitignore*](https://git-scm.com/docs/gitignore) en tu repositorio al inicializarlo, así como la [licencia](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository). Para los fines prácticos esta página, no abordaremos los detalles de estas últimas dos opciones.
 
@@ -134,9 +134,9 @@ Git trabaja en 3 etapas:
 1. **Working directory**: El directorio local que contiene y se modifican todos los archivos de un proyecto. 
 2. **Index (Stage)**: El *área* en donde los cambios del *working directory* se deben registrar.  
 3. **HEAD**: Apunta al último registro de cambios realizado. 
-3. **Server**: El repositorio remoto en el que tus cambios se veran reflejados para todos aquellos que tengan acceso. 
+3. **Server**: El repositorio remoto en el que tus cambios se verán reflejados para todos aquellos que tengan acceso. 
 
-Para subir los cambios de tu directorio local al repositorio remoto disponible para todos, primero debes registrarlos en el Index (Stage) mediante una instrucción de *add*. Después, mediante una instrucción de *commit*, quedaran registrados en el HEAD. Finalmente, con una instrucción *push*, los cambios serán enviados al Server y se verán reflejados en el repositorio remoto. 
+Para subir los cambios de tu directorio local al repositorio remoto disponible para todos, primero debes registrarlos en el Index (Stage) mediante una instrucción de *add*. Después, mediante una instrucción de *commit*, quedarán registrados en el HEAD. Finalmente, con una instrucción *push*, los cambios serán enviados al Server y se verán reflejados en el repositorio remoto. 
 
 <br>
 
@@ -183,7 +183,7 @@ git push
 
 ## :inbox_tray: Pull :inbox_tray:
 
-Para actualizar tu repositorio loca al commit más nuevo, ejecuta:
+Para actualizar tu repositorio local al commit más nuevo, ejecuta:
 
 ```markdown
 git pull
@@ -211,7 +211,7 @@ Para borrar la rama "feature_x", ejecuta :
 git branch -d feature_x
 ```
 
-Una rama nueva no estará disponible para los demás a menos que ejecute sun push a la rama hacia tu repositorio remoto. Para ello, ejecuta:
+Una rama nueva no estará disponible para los demás a menos que ejecutes un push a la rama hacia tu repositorio remoto. Para ello, ejecuta:
 ```markdown
 git push origin feature_x
 ```
@@ -244,7 +244,7 @@ Un *pull request* es la acción de validar un código que se va a fusionar de un
 Cuando querramos *proponer* la fusión de una rama que hemos creado nosotros al dueño del repositorio, una opción es seguir los siguientes sencillos pasos desde GitHub:
 1. Ir al repositorio del proyecto a la pestaña de *Pull requests*.
 2. Da clic en el botón de *New pull request*.
-3. Selecciona en los dos menús drop-down las ramas que quisiéramos que se fusionaran. 
+3. Selecciona en los dos menús drop-down las ramas que quisiéras que se fusionaran. 
 4. Da clic en el botón de *Create pull request*.
 5. Agrega un comentario informativo. 
 6. Da clic en el nuevo botón de *Create pull request*. 
